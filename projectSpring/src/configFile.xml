@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean id="triangle1" class="Triangle"></bean> <bean id="sqr" class="square"></bean> 
+		<bean id = "interface" class="square"></bean> -->
+	<bean id="learner1" class="Learners">
+		<property name="name" value="ujjwal"></property>
+		<property name="age" value = "34"/>
+	</bean>
+	
+	<bean id="learner2" class="Learners">
+		<property name="name" value="rohini"></property>
+		<property name="age" value = "42"/>
+	</bean>
+</beans>

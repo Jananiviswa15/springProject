@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="adrsObj" class="Address"></bean>
+	<bean id="officeObj" class="officeAddres"></bean>
+
+	<!-- <bean id="std" class="Student">
+	 <property name="name" value="janani"></property> 
+		<property name="adrs" ref = "adrsObj"> 
+		
+		<bean class="Address"></bean> //instead 
+		of creating sep v r using ref </property> </bean> -->
+		
+	<!-- <bean id="std1" class="Student"> 
+	<property name="name" value="mamillapalli"></property> 
+		<property name="adrs" ref = "adrsObj"/> 
+		<property name="oadrs" ref = "officeObj"/> 
+		// <bean class="Address"></bean> // </bean> -->
+		
+	<bean id="std2" class="Student">
+		<property name="name" value="nuzhath"></property>
+		<property name="adrsInter" ref="officeObj" />
+	</bean>
+</beans>

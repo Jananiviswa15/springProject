@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 
+	<bean id="obj" class="collections.Questions">
+		<constructor-arg value="12"></constructor-arg>
+		<constructor-arg value="janani"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>I love java</value>
+				<value>I love C</value>
+				<value>I love C++</value>
+				<value>I love python</value>
+			</list>
+		</constructor-arg>
+	</bean>  -->
+	
+	 
+	<!-- 	<bean id="obj1" class="collections.Questions">
+		<property name = "id" value="12" ></property>
+		<property name = "name" value="janani"/>
+		<property name = "phNum">
+			<set>
+				<value>3948324</value>
+				<value>3783743</value>
+				<value>38947324</value>
+			</set>
+		</property>
+	</bean> -->
+	<bean id = "obj1"  class="collections.Questions">
+	<property name = "nameList">
+	<map>
+			<entry key = "12" value= "janani"/>
+			<entry key = "13" value= "janani"/>
+			<entry key = "14" value= "janani"/>
+			<entry key = "15" value= "janani"/>
+	</map>
+	</property>
+	</bean>	
+</beans>
